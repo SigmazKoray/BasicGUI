@@ -27,7 +27,7 @@ class GUI:
         self.labelBackground = tk.Label(parent, text="",bg="black",width=1080,height=1080)
         self.labelBackground.place(x=0,y=0)
         
-        #self.frames = [tk.PhotoImage(file='C:/Users/koray/Desktop/2ba695fd5ecada4d9b337b35e3b7ffbe.gif',format = 'gif -index %i' %(i)) for i in range(25)]
+        #self.frames = [tk.PhotoImage(file='.gif FileDir',format = 'gif -index %i' %(i)) for i in range(25)]
         #self.label2 = tk.Label(image=self.frames[0])
         #self.label2.place(x=0,y=0)
         
@@ -35,7 +35,7 @@ class GUI:
 #         self.labelRocket = tk.Label(image=self.rocket,borderwidth=0, highlightthickness=0)
 #         self.labelRocket.place(x=500,y=500)
 
-        self.hurot = tk.PhotoImage(file='C:/Users/koray/Desktop/DataS/hurot2.png')        
+        self.hurot = tk.PhotoImage(file='png FileDir')        
         self.labelHurot = tk.Label(image=self.hurot,borderwidth=0,highlightthickness=0)
         self.labelHurot.place(x=510,y=120)
     
@@ -90,7 +90,7 @@ class GUI:
         else:
             self.acc = self.acc -0.001/self.t
     def play_sound(self):
-        pygame.mixer.music.load('Naruto Theme - The Raising Fighting Spirit.mp3') #Loading File Into Mixer
+        pygame.mixer.music.load('mp3 FileDir') #Loading File Into Mixer
         pygame.mixer.music.play(0)
         
     def dateData(self):
@@ -145,7 +145,7 @@ class GUI:
 if __name__ == "__main__":
     root = tk.Tk()
     root.geometry("1366x768")
-    root.title("Hacettepe Rocket Science Telemetry")
+    root.title("Title Name")
     pygame.init()
     timer = GUI(root)
     root.mainloop()
